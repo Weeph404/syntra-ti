@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --s-border: rgba(128, 128, 128, 0.185)
+}
+
+body {
+    background-color: rgb(7, 0, 27);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72px;
+    padding: 14px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+
+    border-bottom: 1px solid var(--s-border);
+}
+
+header #logo {
+    height: 100%;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 12px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 200ms ease;
+}
+
+header nav ul li a:hover {
+    color: #954AFF;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 38px;
+    width: 80%;
+    margin: 0 auto;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+#inicio p {
+    margin: 28px 0px;
+}
+
+#inicio a {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid #954AFF;
+    transition: all 300ms ease;
+}
+
+#inicio a:hover {
+    background-color: #954AFF;
+    border: 1px solid #5f21b69d;
+}
+
+#sobre {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 48px;
+    border-bottom: 1px solid gray;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#sobre h2 {
+    margin-bottom: 22px;
+    font-size: 26px;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.container-sobre .card {
+    padding: 12px;
+    border: 1px solid #a667ff;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    background: linear-gradient(to top, #5f21b69d, transparent);
+    transition: all 400ms ease;
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 4px;
+}
+
+.container-sobre .card:hover {
+    transform: translateY(-4px);
+}
+
+.container-sobre .card p {
+    margin-top: 10px;
+}
+
+#servicos {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to top, black, transparent);
+    padding: 48px 0px;
+}
+
+#servicos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#servicos h2 {
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+#servicos img {
+    width: 268px;
+}
+
+#servicos div ul li {
+    list-style: none;
+    text-align: left;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: all 200ms ease;
+}
+
+#servicos i {
+    margin-right: 6px;
+}
+
+#servicos div ul li:hover {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    border-top: 1px solid var(--s-border);
+    background-color: black;
+    height: 70px;
+}
+
+#contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    margin: auto auto;
+}
+
+#contato small {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+#contato nav ul li {
+    display: inline-block;
+}
+
+#contato nav ul li a {
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+}
+
+#float-w-icon {
+    position: fixed;
+    top: 88%;
+    left: 2%;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background-color: #6521c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#float-w-icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
